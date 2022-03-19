@@ -1,0 +1,33 @@
+/* Blink text */
+.flash {
+    -webkit-animation-name:flash;
+    -webkit-animation-duration:0.1s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-direction:alternate;
+    font-style: italic;
+ }
+ 
+ @-webkit-keyframes flash  {
+    from {
+       color: red;
+    }
+    
+    to {
+       color:green;
+    }
+ 
+ }
+
+/* Button Shadow */
+  .bs {
+    box-shadow: 6px 6px 6px #999;
+    transition: background 0.05s linear;
+    transition: all .05s linear;
+  }
+  
+  .bs:active {
+    box-shadow: 2px 2px 2px #777;
+    border-bottom: 1px solid #4fc46c;
+    transform: translateY(3px);
+  }
