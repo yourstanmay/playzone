@@ -7,6 +7,10 @@ document.getElementById("submitguess").onclick = function () {
     if (user <= 100 && user > 0) {
         if (user == num) {
             document.getElementById("resultButton").click();
+            var firework  = new Audio('../Asset/sound/firework.mp3');
+            firework.loop = true;
+            firework.load();
+            firework.play();
             document.getElementById("displayResult").innerHTML = "CONGRATULATIONS!!! You Guessed It Right In "
                 + attempt + " Attempt ";
         }
@@ -53,3 +57,68 @@ for(item of buttons){
         }
     });  
 }
+
+/** Button Sound */
+var audio2 = new Audio('../Asset/sound/button-46.mp3');
+var audio3  = new Audio('../Asset/sound/button-28.mp3');
+var audio4 = new Audio('../Asset/sound/click.mp3');
+var gtn = new Audio('../Asset/sound/gtn_start.mp3');
+
+$(".buttonGuess").mousedown(function() {
+  audio3.load();
+  audio3.play();
+});
+  
+
+$(".buttonNum").mousedown(function() {
+    audio4.load();
+    audio4.play();
+  });
+
+$(".buttonClear").mousedown(function() {
+    audio2.load();
+    audio2.play();
+});
+
+$(".gtns").mousedown(function() {
+    gtn.load();
+    gtn.play();
+});
+
+/** Disbale Right Click and shortcut keys */
+document.addEventListener('contextmenu', event => event.preventDefault());
+document.onkeydown = function(e) {
+    if(event.keyCode == 123) {
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
+        return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+    return false;
+    }
+    }

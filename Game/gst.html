@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="../Asset/css/contact.css">
     <link rel="stylesheet" type="text/css" href="../Asset/css/hoverNav.css">
     <link rel="stylesheet" type="text/css" href="../Asset/css/firework.css">
+    <link rel="stylesheet" type="text/css" href="../Asset/css/gst.css">
 
     <title>YoursTanmay</title>
     <link rel="shortcut icon" type="image/png" href="../Asset/img/logo.jpg">
@@ -37,8 +38,8 @@
     <div class="container">
         <center>
             <div class="border border-light rounded">
-                <img src="../Asset/img/gtnlogo.png" style="height: 48px;">
-                </h1><span class="btn bg-warning">GUESS THE NUMBER</span></h1>
+                <img src="../Asset/img/gtnlogo.png" style="height: 48px;" class="gtns">
+                </h1><span class="btn bg-warning gtns">GUESS THE NUMBER</span></h1>
             </div>
 
             <div style="font-family: serif;">
@@ -48,10 +49,10 @@
 
             <div>
                 <img src="../Asset/img/gtngif.gif" style="height: 48px;">
-                <p id="display"></p>
+                <p class="flash" id="display"></p>
                 <div class="mb-3">
                     <input type="number" placeholder="Enter Number" id="guessField" autocomplete="off"> &nbsp;
-                    <span class="btn btn-success" id="submitguess">
+                    <span class="btn btn-success bs buttonGuess" id="submitguess">
                         Guess
                     </span>
                 </div>
@@ -59,17 +60,17 @@
 
             <!-- Button Group -->
             <div class="btn-group" role="group" aria-label="Basic outlined example">
-                <button type="button" class="btn btn-outline-primary">1</button>
-                <button type="button" class="btn btn-outline-primary">2</button>
-                <button type="button" class="btn btn-outline-primary">3</button>
-                <button type="button" class="btn btn-outline-primary">4</button>
-                <button type="button" class="btn btn-outline-primary">5</button>
-                <button type="button" class="btn btn-outline-primary">6</button>
-                <button type="button" class="btn btn-outline-primary">7</button>
-                <button type="button" class="btn btn-outline-primary">8</button>
-                <button type="button" class="btn btn-outline-primary">9</button>
-                <button type="button" class="btn btn-outline-primary">0</button>
-                <button type="button" class="btn btn-outline-primary">🔙</button>
+                <button type="button" class="btn btn-outline-primary bs buttonNum">1</button>
+                <button type="button" class="btn btn-outline-primary bs buttonNum">2</button>
+                <button type="button" class="btn btn-outline-primary bs buttonNum">3</button>
+                <button type="button" class="btn btn-outline-primary bs buttonNum">4</button>
+                <button type="button" class="btn btn-outline-primary bs buttonNum">5</button>
+                <button type="button" class="btn btn-outline-primary bs buttonNum">6</button>
+                <button type="button" class="btn btn-outline-primary bs buttonNum">7</button>
+                <button type="button" class="btn btn-outline-primary bs buttonNum">8</button>
+                <button type="button" class="btn btn-outline-primary bs buttonNum">9</button>
+                <button type="button" class="btn btn-outline-primary bs buttonNum">0</button>
+                <button type="button" class="btn btn-outline-primary bs buttonClear">🔙</button>
             </div>
 
             <br><br>
@@ -78,13 +79,13 @@
     </div>
 
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#resultModal"
+    <button type="button" class="btn btn-primary d-none firework" data-bs-toggle="modal" data-bs-target="#resultModal"
         id="resultButton">
         Result
     </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="resultModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="resultModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" >
 
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
