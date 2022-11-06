@@ -38,7 +38,7 @@ $(function () {
     bar += '                    <div class="dropOnHover">';
     bar += '                        <a class="dropdown-item" href="https://pinup.42web.io" target="_blank">Pinup(Social Networking)</a>';
     bar += '                        <a class="dropdown-item" href="https://yourstanmay.github.io/fitness" target="_blank">YoursTanmay Fitness</a>';
-    bar += '                        <a class="dropdown-item" href="https://yourtanmay.000webhostapp.com/Banking/" target="_blank">YoursTanmay Banking <span class="badge badge-danger">&nbsp;Confidential🔒</span></a>';
+    bar += '                        <a class="dropdown-item" href="https://yourstanmay.000webhostapp.com/Banking/" target="_blank">YoursTanmay Banking <span class="badge badge-danger">&nbsp;Confidential🔒</span></a>';
     bar += '                        <a class="dropdown-item" href="https://yourstanmay.000webhostapp.com/AdminPanel" target="_blank">Admin Panel <span class="badge badge-danger">&nbsp;🔒</span></a>';
     bar += '                    </div>';
     bar += '                </div>';
