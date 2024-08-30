@@ -19,6 +19,47 @@
     <title>YoursTanmay</title>
     <link rel="shortcut icon" type="image/png" href="../Asset/img/logo.jpg">
 </head>
+<style>
+    .btn-group-container {
+        display: flex;
+        justify-content: center;
+        /* Center the button group horizontally */
+        align-items: center;
+        /* Center the button group vertically if needed */
+        margin-top: 20px;
+        /* Adjust as needed */
+        flex-wrap: wrap;
+        /* Allow the buttons to wrap to the next line */
+    }
+
+    .btn-group .btn {
+        flex: 1 1 40px;
+        /* Equal width for all buttons; adjust width as needed */
+        max-width: 40px;
+        /* Ensure buttons do not grow larger than specified */
+        min-width: 40px;
+        /* Ensure buttons do not shrink smaller than specified */
+        height: 40px;
+        /* Set a fixed height for all buttons */
+        padding: 5px;
+        /* Adjust padding for a more compact look */
+        font-size: 14px;
+        /* Adjust font size for a smaller button look */
+        text-align: center;
+        /* Center text inside buttons */
+        box-sizing: border-box;
+        /* Include padding and border in element's width and height */
+    }
+
+    .btn-clear {
+        flex: 1 1 80px;
+        /* Larger width for the clear button */
+        max-width: 80px;
+        min-width: 80px;
+        height: 40px;
+        /* Match height with other buttons */
+    }
+</style>
 
 <body>
 
@@ -59,18 +100,20 @@
             </div>
 
             <!-- Button Group -->
-            <div class="btn-group" role="group" aria-label="Basic outlined example">
-                <button type="button" class="btn btn-outline-primary bs buttonNum">1</button>
-                <button type="button" class="btn btn-outline-primary bs buttonNum">2</button>
-                <button type="button" class="btn btn-outline-primary bs buttonNum">3</button>
-                <button type="button" class="btn btn-outline-primary bs buttonNum">4</button>
-                <button type="button" class="btn btn-outline-primary bs buttonNum">5</button>
-                <button type="button" class="btn btn-outline-primary bs buttonNum">6</button>
-                <button type="button" class="btn btn-outline-primary bs buttonNum">7</button>
-                <button type="button" class="btn btn-outline-primary bs buttonNum">8</button>
-                <button type="button" class="btn btn-outline-primary bs buttonNum">9</button>
-                <button type="button" class="btn btn-outline-primary bs buttonNum">0</button>
-                <button type="button" class="btn btn-outline-primary bs buttonClear">🔙</button>
+            <div class="btn-group-container">
+                <div class="btn-group d-flex flex-wrap" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="btn btn-outline-primary bs buttonNum">1</button>
+                    <button type="button" class="btn btn-outline-primary bs buttonNum">2</button>
+                    <button type="button" class="btn btn-outline-primary bs buttonNum">3</button>
+                    <button type="button" class="btn btn-outline-primary bs buttonNum">4</button>
+                    <button type="button" class="btn btn-outline-primary bs buttonNum">5</button>
+                    <button type="button" class="btn btn-outline-primary bs buttonNum">6</button>
+                    <button type="button" class="btn btn-outline-primary bs buttonNum">7</button>
+                    <button type="button" class="btn btn-outline-primary bs buttonNum">8</button>
+                    <button type="button" class="btn btn-outline-primary bs buttonNum">9</button>
+                    <button type="button" class="btn btn-outline-primary bs buttonNum">0</button>
+                    <button type="button" class="btn btn-outline-primary bs buttonClear">🔙</button>
+                </div>
             </div>
 
             <br><br>
@@ -85,7 +128,8 @@
     </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="resultModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" >
+    <div class="modal fade" id="resultModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
 
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
