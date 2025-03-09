@@ -42,7 +42,8 @@ document.getElementById("guessField").addEventListener("keyup", function (event)
 });
 
 let screen = document.getElementById("guessField");
-buttons = document.querySelectorAll("button");
+// Only select number buttons and clear button, not all buttons
+buttons = document.querySelectorAll(".buttonNum, .buttonClear");
 for(item of buttons){
     item.addEventListener('click' , (e)=>{
         buttonText = e.target.innerText;
